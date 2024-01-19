@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --ps-primary-color: #e0e2db;
+  --ps-primary-color: #F5F6F4;
   --ps-secondary-color: #d2d4c8;
   --ps-tertiary-color: #797e63;
   --ps-fourth-color: #8b2635;
@@ -44,6 +44,6 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--ps-bg-color);
 }
 

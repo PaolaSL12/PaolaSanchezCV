@@ -2,6 +2,7 @@ const data = {
   name: "Paola Sanchez Lorenzo",
   location: "Madrid, España",
   email: "paola.sanchezl12@gmail.com",
+  image: "https://res.cloudinary.com/daowiromv/image/upload/v1705668317/fotops_pevrty.jpg",
   phone: 651585046,
   aboutMe: `¡Hola! Mi nombre es Paola, este es el CV de una panadera que cada dia le esta encantando mas 
      este nuevo mundo de la programacion, siempre
@@ -142,13 +143,31 @@ const data = {
       location: "Caracas, Venezuela",
     }
   ],
-  skills: [
-    "Panaderia",
-    "HTML",
-    "Pasteleria",
-    "CSS",
-    "Atencion al publico",
-    "JavaScript"
+  skills: [ 
+    {
+    name: "Panaderia",
+    img: "https://res.cloudinary.com/daowiromv/image/upload/v1705683554/bread_svihec.png"
+  },
+  {
+    name: "HTML",
+    img: "https://res.cloudinary.com/daowiromv/image/upload/v1705669624/html_2_puxha2.png"
+  },
+  {
+    name: "Pasteleria",
+    img: "https://res.cloudinary.com/daowiromv/image/upload/v1705683554/cake_rqabqb.png"
+  },
+  {
+    name: "CSS",
+    img: "https://res.cloudinary.com/daowiromv/image/upload/v1705669624/css_2_ou5ep1.png"
+  },
+  {
+    name: "Atencion al publico",
+    img: "https://res.cloudinary.com/daowiromv/image/upload/v1705683677/food-service_qd5pkw.png"
+  },
+  {
+    name: "JavaScript",
+    img: "https://res.cloudinary.com/daowiromv/image/upload/v1705669625/js-format_1_ohsp8s.png"
+  }
   ],
   proyects: [
     {
