@@ -1,4 +1,5 @@
-import data from "../data/data";
+
+import { data } from "../data/data";
 import "./Hero.css";
 
 export const cerateHero = () => {

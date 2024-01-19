@@ -1,4 +1,4 @@
-const data = {
+export const data = {
   name: "Paola Sanchez Lorenzo",
   location: "Madrid, España",
   email: "paola.sanchezl12@gmail.com",
@@ -190,5 +190,3 @@ const data = {
     }
   ]
 };
-
-export default data;
