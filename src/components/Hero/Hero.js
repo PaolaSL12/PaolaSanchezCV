@@ -1,8 +1,8 @@
 
-import { data } from "../data/data";
-import "./hero.css";
+import { data } from "../data/data.js";
+import "./Hero.css";
 
-export const cerateHero = () => {
+export const createHero = () => {
   const heroContainer = document.createElement("div");
   const hero = document.createElement("div");
   const skills = document.createElement("div");
