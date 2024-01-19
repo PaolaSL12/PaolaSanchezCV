@@ -50,12 +50,12 @@ export const cerateHero = () => {
   skill5p.textContent = data.skills[4].name;
   skill6p.textContent = data.skills[5].name;
 
-  skills.addEventListener("mouseover", (e) => {
-    if (e.target.className === "yes") {
-      const skillIndex = parseInt(e.target.id, 10);
+  document.addEventListener("mouseover", function (e) {
+    if (e.target.classList.contains("yes")) {
+      var skillIndex = parseInt(e.target.id, 10);
       if (data.skills[skillIndex]) {
-        const skill = data.skills[skillIndex];
-        e.target.style.backgroundImage = `url("${skill.img}")`;
+        var skill = data.skills[skillIndex];
+        e.target.style.backgroundImage = "url('" + skill.img + "')";
         e.target.style.backgroundSize = "cover";
         e.target.style.backgroundColor = "#d2d4c8";
         e.target.textContent = "";
@@ -64,11 +64,11 @@ export const cerateHero = () => {
     }
   });
   
-  skills.addEventListener("mouseout", (e) => {
-    if (e.target.className === "yes") {
-      const skillIndex = parseInt(e.target.id, 10);
+  document.addEventListener("mouseout", function (e) {
+    if (e.target.classList.contains("yes")) {
+      var skillIndex = parseInt(e.target.id, 10);
       if (data.skills[skillIndex]) {
-        const skill = data.skills[skillIndex];
+        var skill = data.skills[skillIndex];
         e.target.textContent = skill.name;
         e.target.style.backgroundColor = "#F5F6F4";
         e.target.style.backgroundImage = "";
