@@ -40,7 +40,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: var(--ps-margin-l);
-  
 }
 .skills > div {
   width: 100px;
@@ -53,14 +52,11 @@
   border: 3px solid var(--ps-highlight-color);
   border-radius: var(--ps-br);
   cursor: pointer;
+  padding: var(--ps-padding-s);
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--ps-highlight-color);
 }
-
-.skills > div > p {
-    padding: var(--ps-padding-s);
-    font-size: 0.9em;
-    font-weight: 500;
-    color: var(--ps-highlight-color);
-  }
 
 @media screen and (max-width: 750px) {
   .heroContainer {
@@ -90,7 +86,7 @@
     height: 200px;
     object-fit: cover;
   }
-  
+
   .description {
     width: 100%;
   }
