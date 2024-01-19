@@ -12,6 +12,8 @@ export const createNavBar = () => {
     const education = document.createElement("a");
     const expirience = document.createElement("a");
     const proyects = document.createElement("a");
+    const divMenu = document.createElement("div");
+    const menuImg = document.createElement("img");
 
     h1.textContent = "PAOLA SANCHEZ";
     home.textContent = "Home";
@@ -22,17 +24,29 @@ export const createNavBar = () => {
     education.textContent = "Educación";
     expirience.textContent = "Experiencia";
     proyects.textContent = "Proyectos";
+    menuImg.src = "https://cdn-icons-png.flaticon.com/128/5706/5706915.png"
+    divMenu.className = "toggleImg"
+
+    divMenu.addEventListener("click", (e) => {
+        if (!myUl.className) {
+            myUl.className = "menu"
+        } else {
+            myUl.className = ""
+        }
+    })
 
     liHome.append(home);
     liEducation.append(education);
     liExpirience.append(expirience);
     liProyects.append(proyects);
+    divMenu.append(menuImg);
     nav.append(h1);
     myUl.append(liHome);
     myUl.append(liEducation);
     myUl.append(liExpirience);
     myUl.append(liProyects);
-    nav.append(myUl)
+    nav.append(myUl);
+    nav.append(divMenu);
 
     document.body.querySelector("#app").append(nav);
 }

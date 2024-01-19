@@ -19,6 +19,7 @@
   --ps-margin-l: 30px;
   --ps-margin-xl: 40px;
 
+  --ps-padding-xs: 3px;
   --ps-padding-s: 10px;
   --ps-padding-m: 20px;
   --ps-padding-l: 30px;
@@ -45,3 +46,4 @@
 body {
   background-color: var(--bg-color);
 }
+
