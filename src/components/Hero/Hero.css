@@ -50,7 +50,7 @@
   align-items: center;
   text-align: center;
   margin: var(--ps-margin-m);
-  border: 3px solid var(--ps-secondary-color);
+  border: 3px solid var(--ps-highlight-color);
   border-radius: var(--ps-br);
   cursor: pointer;
 }
@@ -59,6 +59,7 @@
     padding: var(--ps-padding-s);
     font-size: 0.9em;
     font-weight: 500;
+    color: var(--ps-highlight-color);
   }
 
 @media screen and (max-width: 750px) {
