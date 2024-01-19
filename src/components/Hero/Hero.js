@@ -16,12 +16,6 @@ export const cerateHero = () => {
   const skill4 = document.createElement("div");
   const skill5 = document.createElement("div");
   const skill6 = document.createElement("div");
-  const skill1p = document.createElement("p");
-  const skill2p = document.createElement("p");
-  const skill3p = document.createElement("p");
-  const skill4p = document.createElement("p");
-  const skill5p = document.createElement("p");
-  const skill6p = document.createElement("p");
 
   heroContainer.className = "heroContainer";
   hero.className = "hero";
@@ -44,50 +38,40 @@ export const cerateHero = () => {
   skill6.className = "yes";
   skill6.id = "5";
 
-  skill1p.textContent = data.skills[0].name;
-  skill2p.textContent = data.skills[1].name;
-  skill3p.textContent = data.skills[2].name;
-  skill4p.textContent = data.skills[3].name;
-  skill5p.textContent = data.skills[4].name;
-  skill6p.textContent = data.skills[5].name;
+  skill1.textContent = data.skills[0].name;
+  skill2.textContent = data.skills[1].name;
+  skill3.textContent = data.skills[2].name;
+  skill4.textContent = data.skills[3].name;
+  skill5.textContent = data.skills[4].name;
+  skill6.textContent = data.skills[5].name;
 
   skills.addEventListener("mouseover", (e) => {
     if (e.target.className === "yes") {
-      if (e.target.textContent === "Panaderia") {
-        e.target.style.backgroundImage = `url("${data.skills[0].img}")`;
-      } else if (e.target.textContent === "HTML") {
-        e.target.style.backgroundImage = `url("${data.skills[1].img}")`;
-      } else if (e.target.textContent === "Pasteleria") {
-        e.target.style.backgroundImage = `url("${data.skills[2].img}")`;
-      } else if (e.target.textContent === "CSS") {
-        e.target.style.backgroundImage = `url("${data.skills[3].img}")`;
-      } else if (e.target.textContent === "Atencion al publico") {
-        e.target.style.backgroundImage = `url("${data.skills[4].img}")`;
-      } else if (e.target.textContent === "JavaScript") {
-        e.target.style.backgroundImage = `url("${data.skills[5].img}")`;
+      const skillIndex = parseInt(e.target.id, 10);
+      if (data.skills[skillIndex]) {
+        const skill = data.skills[skillIndex];
+        e.target.style.backgroundImage = `url("${skill.img}")`;
+        e.target.style.backgroundSize = "cover";
+        e.target.style.backgroundColor = "#d2d4c8";
+        e.target.textContent = "";
+        e.target.style.transition = "background-image 0.5s ease, background-color 0.5s ease";
       }
-      e.target.style.transition = "background-image 0.5s ease, background-color 0.5s ease";
-      e.target.style.backgroundSize = "cover";
-      e.target.style.backgroundColor = "#d2d4c8";
-      e.target.textContent = "";
     }
   });
-
+  
   skills.addEventListener("mouseout", (e) => {
     if (e.target.className === "yes") {
-      e.target.textContent = data.skills[e.target.id].name;
-      e.target.style.backgroundColor = "#F5F6F4";
-      e.target.style.backgroundImage = "";
-      e.target.style.transition = "background-image 0.5s ease, background-color 0.5s ease";
+      const skillIndex = parseInt(e.target.id, 10);
+      if (data.skills[skillIndex]) {
+        const skill = data.skills[skillIndex];
+        e.target.textContent = skill.name;
+        e.target.style.backgroundColor = "#F5F6F4";
+        e.target.style.backgroundImage = "";
+        e.target.style.transition = "background-image 0.5s ease, background-color 0.5s ease";
+      }
     }
   });
 
-  skill1.append(skill1p);
-  skill2.append(skill2p);
-  skill3.append(skill3p);
-  skill4.append(skill4p);
-  skill5.append(skill5p);
-  skill6.append(skill6p);
 
   divImg.append(img);
   hero.append(divImg);
