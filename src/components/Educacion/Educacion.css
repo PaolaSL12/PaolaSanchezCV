@@ -1,0 +1,25 @@
+section {
+    height: auto;
+    margin: var(--ps-margin-l);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > h1 {
+    text-align: center;
+}
+
+section > article {
+    width: 50%;
+    justify-content: center;
+    height: auto;
+    padding: var(--ps-padding-s);
+}
+
+@media screen and (max-width: 750px)  {
+    section > article {
+        width: 90%;
+    }
+  }

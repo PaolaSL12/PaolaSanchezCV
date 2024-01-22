@@ -1,11 +1,11 @@
 .heroContainer {
   width: 100%;
-  height: 80vh;
+  height: auto;
 }
 
 .hero {
   width: 100%;
-  height: 55vh;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -36,6 +36,7 @@
 }
 
 .skills {
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -58,27 +59,20 @@
   color: var(--ps-highlight-color);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 355px)  {
   .heroContainer {
-    height: 100vh;
+    height: 185vh;
   }
 
   .hero {
     width: 100%;
-    height: 80vh;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    height: auto;
     padding: var(--ps-padding-s);
   }
 
   .imgHero {
     width: 100%;
     height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .imgHero > img {
@@ -94,9 +88,95 @@
     padding: 0 var(--ps-padding-m);
     text-align: center;
   }
+
+  .skills {
+    margin: var(--ps-margin-m) var(--ps-margin-l);
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 356px) and (max-width: 479px) {
+  .heroContainer {
+    height: auto;
+  }
+
+  .hero {
+    width: 100%;
+    height: auto;
+    padding: var(--ps-padding-s);
+  }
+
+  .imgHero {
+    width: 100%;
+    height: 200px;
+  }
+
+  .imgHero > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .description {
+    width: 100%;
+  }
+  .description > p {
+    padding: 0 var(--ps-padding-m);
+    text-align: center;
+  }
+
+  .skills {
+    margin: var(--ps-margin-m) var(--ps-margin-l);
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 750px) {
+  .heroContainer {
+    height: auto;
+  }
+
+  .hero {
+    width: 100%;
+    height: auto;
+    padding: var(--ps-padding-s);
+  }
+
+  .imgHero {
+    width: 100%;
+    height: 200px;
+  }
+
+  .imgHero > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .description {
+    width: 100%;
+  }
+  .description > p {
+    padding: 0 var(--ps-padding-m);
+    text-align: center;
+  }
+
+  .skills {
+    margin: var(--ps-margin-m) var(--ps-margin-l);
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 750px) and (max-width: 1200px) {
+  .hero {
+    height: auto;
+  }
+  .description > p {
+    text-align: center;
+  }
+  .skills {
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 1201px) {
@@ -104,6 +184,7 @@
     justify-content: space-evenly;
   }
   .description > p {
+    text-align: center;
     font-size: 1.1em;
     padding: 0 var(--ps-padding-m);
   }
