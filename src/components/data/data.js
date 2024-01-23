@@ -177,19 +177,19 @@ export const data = {
         title:"Market Creative Studios",
         description:"Este seria uno de misprimeros proyectos de landing Page",
         link:"https://sprightly-kangaroo-5b116d.netlify.app/",
-        img:"../public/assets/market.png"
+        img:"https://res.cloudinary.com/daowiromv/image/upload/v1706037876/market_ofbjo8.png"
     },
     {
         title:"Modelismo.com",
         description:"Page para una “supuesta” tienda? Pues ha llegado el momento de mejorar este proyecto utilizando JavaScript en el DOM 🤘",
         link:"https://gleaming-pixie-9a78be.netlify.app/",
-        img:"../public/assets/modelismo.png"
+        img:"https://res.cloudinary.com/daowiromv/image/upload/v1706037876/modelismo_d09w2d.png"
     },
     {
         title:"DSisters",
         description:"En este proyecto crearás una landing page maquetada y responsive para una “supuesta tienda” de la que serás dueñ@.",
         link:"https://sparkling-tartufo-59c458.netlify.app/",
-        img:"../public/assets/dsisters.png"
+        img:"https://res.cloudinary.com/daowiromv/image/upload/v1706037878/dsisters_hrsyum.png"
     }
   ]
 };
