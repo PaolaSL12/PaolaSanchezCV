@@ -16,8 +16,7 @@ export const createWorkExpirience = () => {
         const articleWork = document.createElement("article");
         const position = document.createElement("h3");
         const pCompany = document.createElement("p");
-        const pStartDate = document.createElement("p");
-        const pFinishDate = document.createElement("p");
+        const pDate = document.createElement("p");
         const location = document.createElement("p");
         const description = document.createElement("p");
 
@@ -25,13 +24,16 @@ export const createWorkExpirience = () => {
         pCompany.className = "company";
         description.className = "descriptionWork";
         location.className = "location";
+        pDate.className = "date";
         position.textContent = element.position;
-        pCompany.textContent = `${element.company} • ${pStartDate} - ${pFinishDate}`;
+        pCompany.textContent = element.company;
+        pDate.textContent =  `${element.startDate} - ${element.finishDate}`;
         location.textContent = element.location;
         description.textContent = element.description;
 
         articleWork.append(position);
         articleWork.append(pCompany);
+        articleWork.append(pDate);
         articleWork.append(location);
         articleWork.append(description);
         sectionWork.append(articleWork);

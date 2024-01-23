@@ -15,15 +15,26 @@
 }
 
 .workArticle {
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
   width: 40%;
-  justify-content: center;
+  justify-content: start;
+  align-items: start;
   height: auto;
   padding: var(--ps-padding-s);
 }
 
 .company {
+  font-size: 1em;
+}
+
+.date {
+  font-size: 0.8em;
+}
+
+.company, .date {
   color: var(--ps-tertiary-color);
+  
 }
 
 .location,
@@ -51,10 +62,26 @@
   }
   .workArticle {
     display: flex;
-    width: 280px;
+    width: 260px;
     height: 220px;
-    align-content: space-around;
+    align-content: start;
     justify-content: flex-start;
     padding: var(--ps-padding-s);
   }
+
+
+.company {
+  font-size: 1em;
+  padding-top: var(--ps-padding-s);
+}
+
+.date {
+  font-size: 0.8em;
+  padding-bottom: var(--ps-padding-s);
+}
+
+.company, .date {
+  color: var(--ps-tertiary-color);
+  
+}
 }
