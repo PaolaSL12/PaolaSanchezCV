@@ -1,5 +1,6 @@
-section {
+.workSection {
   height: auto;
+  width: 90%;
   margin: var(--ps-margin-l);
   display: flex;
   flex-direction: column;
@@ -7,12 +8,13 @@ section {
   align-items: center;
 }
 
-section > h2 {
+.workSection > h2 {
   font-size: 4em;
   text-align: center;
+  padding: var(--ps-padding-s);
 }
 
-section > article {
+.workArticle {
   flex-wrap: wrap;
   width: 40%;
   justify-content: center;
@@ -20,37 +22,39 @@ section > article {
   padding: var(--ps-padding-s);
 }
 
-section > article > p:last-of-type {
+.company {
+  color: var(--ps-tertiary-color);
+}
+
+.location,
+.descriptionWork {
+  font-size: 0.85em;
   color: var(--ps-secondary-text-color);
 }
 
 @media screen and (max-width: 750px) {
-  section > article {
+  .workArticle {
     width: 90%;
   }
 }
 
 @media screen and (min-width: 750px) {
-  section {
+  .workSection {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     width: 80%;
-    align-items: center;
     justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: 200px repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+    align-content: center;
     gap: var(--ps-gap-s);
-    
   }
-
-  section > h2 {
-    grid-column: 1 / end;
-  }
-  section > article {
+  .workArticle {
     display: flex;
-    width: 200px;
+    width: 280px;
+    height: 220px;
     align-content: space-around;
     justify-content: flex-start;
-    height: 200px;
     padding: var(--ps-padding-s);
   }
 }

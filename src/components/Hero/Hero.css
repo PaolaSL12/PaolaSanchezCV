@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 355px)  {
   .heroContainer {
-    height: 185vh;
+    height: auto;
   }
 
   .hero {
@@ -91,7 +91,7 @@
 
   .skills {
     margin: var(--ps-margin-m) var(--ps-margin-l);
-    height: 100vh;
+    height: 120vh;
   }
 }
 

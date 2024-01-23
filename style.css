@@ -47,3 +47,10 @@ body {
   background-color: var(--ps-bg-color);
 }
 
+h1, h2 {
+  font-size: 4em;
+  font-weight: 600;
+  color: var(--ps-highlight-color);
+  font-family: "Amatic SC", sans-serif;
+}
+

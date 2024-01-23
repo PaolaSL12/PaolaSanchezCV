@@ -17,10 +17,10 @@ export const createNavBar = () => {
 
     h1.textContent = "PAOLA SANCHEZ";
     home.textContent = "Home";
-    home.href = "#";
-    education.href = "#";
-    expirience.href = "#";
-    proyects.href = "#";
+    home.href = "#hero";
+    education.href = "#education";
+    expirience.href = "#work";
+    proyects.href = "#proyects";
     education.textContent = "Educación";
     expirience.textContent = "Experiencia";
     proyects.textContent = "Proyectos";

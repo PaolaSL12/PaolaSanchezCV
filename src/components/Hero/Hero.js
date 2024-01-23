@@ -19,6 +19,7 @@ export const createHero = () => {
 
   heroContainer.className = "heroContainer";
   hero.className = "hero";
+  hero.id = "hero";
   skills.className = "skills";
   divImg.className = "imgHero";
   divDescription.className = "description";

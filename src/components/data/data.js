@@ -60,6 +60,7 @@ export const data = {
       startDate: 11/2023,
       finishDate: "Actualemtne",
       description: "Catering para eventos",
+      location: "Madrid, España"
     },
     {
       company: "Fismuler",
@@ -68,6 +69,7 @@ export const data = {
       finishDate: 10 / 2023,
       description:
         "Preparacion de postres y atencion a clientes durante el servicio",
+      location: "Madrid, España"
     },
     {
       company: "DO&CO",
@@ -75,6 +77,7 @@ export const data = {
       startDate: 7 / 2022,
       finishDate: 6 / 2023,
       description: "Ayudante de Cocina",
+      location: "Madrid, España"
     },
     {
       company: "Aleiro Pastelería Artesana",
@@ -178,15 +181,15 @@ export const data = {
     },
     {
         title:"Modelismo.com",
-        description:"",
+        description:"Page para una “supuesta” tienda? Pues ha llegado el momento de mejorar este proyecto utilizando JavaScript en el DOM 🤘",
         link:"https://gleaming-pixie-9a78be.netlify.app/",
         img:"../public/assets/modelismo.png"
     },
     {
         title:"DSisters",
-        description:"",
+        description:"En este proyecto crearás una landing page maquetada y responsive para una “supuesta tienda” de la que serás dueñ@.",
         link:"https://sparkling-tartufo-59c458.netlify.app/",
-        img:"../public/assets/market.png"
+        img:"../public/assets/dsisters.png"
     }
   ]
 };
