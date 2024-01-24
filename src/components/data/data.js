@@ -1,14 +1,14 @@
 export const data = {
-  name: "Paola Sanchez Lorenzo",
+  name: "Paola Sánchez Lorenzo",
   location: "Madrid, España",
   email: "paola.sanchezl12@gmail.com",
   image: "https://res.cloudinary.com/daowiromv/image/upload/v1705668317/fotops_pevrty.jpg",
   phone: 651585046,
-  aboutMe: `¡Hola! Mi nombre es Paola, este es el CV de una panadera que cada dia le esta encantando mas 
-     este nuevo mundo de la programacion, siempre
+  aboutMe: `¡Hola! Mi nombre es Paola, este es el CV de una panadera que cada día le está encantando más 
+     este nuevo mundo de la programación, siempre
     he tenido pasión por crear y por hacer feliz a
-    los que prueban mis creaciones pero en este caso sera verlas. He aprendido a dar lo mejor de mi en 
-    mi trabajo y en este caso no sera diferente.`,
+    los que prueban mis creaciones pero en este caso será verlas. He aprendido a dar lo mejor de mí en 
+    mi trabajo y en este caso no será diferente.`,
   education: [
     {
       title: "Desarrollador Full Stack",
@@ -53,12 +53,12 @@ export const data = {
       year: "2012",
     },
   ],
-  workExpirience: [
+  workExperience: [
     {
       company: "New Personal",
       position: "Cocinera",
       startDate: "11/2023",
-      finishDate: "Actualemtne",
+      finishDate: "Actualmente",
       description: "Catering para eventos",
       location: "Madrid, España"
     },
@@ -68,7 +68,7 @@ export const data = {
       startDate: "6 / 2023",
       finishDate: "10 / 2023",
       description:
-        "Preparacion de postres y atencion a clientes durante el servicio",
+        "Preparación de postres y atención a clientes durante el servicio",
       location: "Madrid, España"
     },
     {
@@ -81,7 +81,7 @@ export const data = {
     },
     {
       company: "Aleiro Pastelería Artesana",
-      position: "Ayudante de Pasteleria",
+      position: "Ayudante de Pastelería",
       startDate: "4 / 2021",
       finishDate: "4 / 2022",
       description: "Apoyo al equipo en tareas de pastelería y panadería",
@@ -100,7 +100,7 @@ export const data = {
       position: "Camarera",
       startDate: "6 / 2020",
       finishDate: "8 / 2020",
-      description: "Atencion de clientes",
+      description: "Atención de clientes",
       location: "Tazacorte, Santa Cruz de La Palma, España",
     },
     {
@@ -116,7 +116,7 @@ export const data = {
       position: "Ayudante de pastelería",
       startDate: "7 / 2019",
       finishDate: "12 / 2019",
-      description: "Apoyo al equipo de pastelería y atencion del buffet",
+      description: "Apoyo al equipo de pastelería y atención del buffet",
       location: "Tenerife, España",
     },
     {
@@ -148,7 +148,7 @@ export const data = {
   ],
   skills: [ 
     {
-    name: "Panaderia",
+    name: "Panadería",
     img: "https://res.cloudinary.com/daowiromv/image/upload/v1705683554/bread_svihec.png"
   },
   {
@@ -156,7 +156,7 @@ export const data = {
     img: "https://res.cloudinary.com/daowiromv/image/upload/v1705669624/html_2_puxha2.png"
   },
   {
-    name: "Pasteleria",
+    name: "Pastelería",
     img: "https://res.cloudinary.com/daowiromv/image/upload/v1705683554/cake_rqabqb.png"
   },
   {
@@ -164,7 +164,7 @@ export const data = {
     img: "https://res.cloudinary.com/daowiromv/image/upload/v1705669624/css_2_ou5ep1.png"
   },
   {
-    name: "Atencion al publico",
+    name: "Atención al público",
     img: "https://res.cloudinary.com/daowiromv/image/upload/v1705683677/food-service_qd5pkw.png"
   },
   {
@@ -172,16 +172,16 @@ export const data = {
     img: "https://res.cloudinary.com/daowiromv/image/upload/v1705669625/js-format_1_ohsp8s.png"
   }
   ],
-  proyects: [
+  projects: [
     {
         title:"Market Creative Studios",
-        description:"Este seria uno de misprimeros proyectos de landing Page",
+        description:"Este sería uno de mis primeros proyectos de landing Page",
         link:"https://sprightly-kangaroo-5b116d.netlify.app/",
         img:"https://res.cloudinary.com/daowiromv/image/upload/v1706037876/market_ofbjo8.png"
     },
     {
         title:"Modelismo.com",
-        description:"Page para una “supuesta” tienda? Pues ha llegado el momento de mejorar este proyecto utilizando JavaScript en el DOM 🤘",
+        description:"Página para una “supuesta” tienda. Pues ha llegado el momento de mejorar este proyecto utilizando JavaScript en el DOM 🤘",
         link:"https://gleaming-pixie-9a78be.netlify.app/",
         img:"https://res.cloudinary.com/daowiromv/image/upload/v1706037876/modelismo_d09w2d.png"
     },
