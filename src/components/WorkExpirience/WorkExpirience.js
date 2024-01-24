@@ -12,7 +12,7 @@ export const createWorkExpirience = () => {
     workTitle.textContent = "Experiencia Laboral";
     sectionWork.append(workTitle);
 
-    for (const element of data.workExpirience) {
+    for (const element of data.workExperience) {
         const articleWork = document.createElement("article");
         const position = document.createElement("h3");
         const pCompany = document.createElement("p");

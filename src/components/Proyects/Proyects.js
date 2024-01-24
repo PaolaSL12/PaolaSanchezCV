@@ -13,7 +13,7 @@ export const createProyects = () => {
     sectionProyect.append(proyectTitle);
     const proyectContainer = document.createElement("div");
 
-    for (const element of data.proyects) {
+    for (const element of data.projects) {
         const proyectArticle = document.createElement("article");
         const titleProyect = document.createElement("h3");
         const divImgProyect = document.createElement("div");
