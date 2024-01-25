@@ -12,4 +12,5 @@ createNavBar();
 createHero();
 buttons();
 createSectionDiv();
+createWorkExpirience();
 createProyects();
