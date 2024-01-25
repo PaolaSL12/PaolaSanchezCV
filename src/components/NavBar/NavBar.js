@@ -30,11 +30,15 @@ export const createNavBar = () => {
     divMenu.addEventListener("click", (e) => {
         if (!myUl.className) {
             myUl.className = "menu"
+            if (myUl.className = "menu") {
+                nav.style.marginBottom = `120px`
+            }
         } else {
             myUl.className = ""
+            nav.style.marginBottom = `0px`
         }
     })
-
+    
     liHome.append(home);
     liEducation.append(education);
     liExpirience.append(expirience);
