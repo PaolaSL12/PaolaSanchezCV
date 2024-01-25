@@ -11,6 +11,5 @@ import './style.css'
 createNavBar();
 createHero();
 buttons();
-createWorkExpirience();
 createSectionDiv();
 createProyects();
