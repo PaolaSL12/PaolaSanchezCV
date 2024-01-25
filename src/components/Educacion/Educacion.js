@@ -3,6 +3,11 @@ import './Educacion.css'
 
 
 export const createEducation = () => {
+
+    const sectionDiv = document.querySelector(".sectionDiv");
+
+    sectionDiv.innerHTML = "";
+
     const sectionEducation = document.createElement("section");
     const educationTitle = document.createElement("h2");
     sectionEducation.id = "education";
@@ -27,5 +32,5 @@ export const createEducation = () => {
     }
 
    
-    document.querySelector("#app").append(sectionEducation);
+    sectionDiv.append(sectionEducation);
 }

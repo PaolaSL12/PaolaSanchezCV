@@ -4,6 +4,11 @@ import "./WorkExpirience.css";
 data
 
 export const createWorkExpirience = () => {
+
+    const sectionDiv = document.querySelector(".sectionDiv");
+
+    sectionDiv.innerHTML = "";
+
     const sectionWork = document.createElement("section");
     const workTitle = document.createElement("h2");
     sectionWork.className = "workSection";
@@ -39,5 +44,5 @@ export const createWorkExpirience = () => {
         sectionWork.append(articleWork);
     }
 
-    document.querySelector("#app").append(sectionWork);
+    sectionDiv.append(sectionWork);
 }

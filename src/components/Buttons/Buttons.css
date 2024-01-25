@@ -1,0 +1,23 @@
+.buttons {
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+}
+
+.buttons > button {
+    width: 100px;
+    height: 45px;
+    border: 3px solid var(--ps-highlight-color);
+    border-radius: var(--ps-br);
+    margin: var(--ps-margin-s);
+    background-color: var(--ps-highlight-color);
+    color: var(--ps-primary-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons > button:hover {
+    transform: scale(1.1);
+}

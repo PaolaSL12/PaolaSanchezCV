@@ -1,3 +1,5 @@
+import { createEducation } from "../Educacion/Educacion";
+import { createWorkExpirience } from "../WorkExpirience/WorkExpirience";
 import "./NavBar.css"
 
 export const createNavBar = () => {
@@ -39,6 +41,22 @@ export const createNavBar = () => {
         }
     })
     
+   window.addEventListener("resize", () => {
+    if (window.innerWidth >= 750) {
+        myUl.className = "";
+        nav.style.marginBottom = `0px`
+    }
+
+   })
+
+   education.addEventListener("click", () => {
+    createEducation();
+   })
+
+   expirience.addEventListener("click", () => {
+    createWorkExpirience();
+   })
+
     liHome.append(home);
     liEducation.append(education);
     liExpirience.append(expirience);
